@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f4ec">
+    <meta name="description" content="BugLanche: hambúrguer bom de verdade, feito para deixar seu dia mais gostoso.">
+    <title>BugLanche | Seu próximo burger favorito</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="BugLanche, voltar ao início">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M5 13a11 11 0 0 1 22 0H5Z" fill="currentColor"/>
+                    <path d="M4 16h24v3H4zM6 21h20v3H6zM8 26h16v2H8z" fill="currentColor"/>
+                    <circle cx="12" cy="8" r="1" fill="#f7f4ec"/>
+                    <circle cx="18" cy="6" r="1" fill="#f7f4ec"/>
+                    <circle cx="22" cy="10" r="1" fill="#f7f4ec"/>
+                </svg>
+            </span>
+            <span>Bug<span class="brand-accent">Lanche</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="#home">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="button button-small header-cta" href="#cardapio">
+            Ver cardápio <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+    <main>
+        <section class="hero section-shell" id="home">
+            <div class="hero-copy reveal">
+                <span class="eyebrow"><span class="eyebrow-dot"></span> A fome pediu, a gente caprichou</span>
+                <h1>Seu próximo<br>burger <span>favorito.</span></h1>
+                <p>Uma mordida e pronto: o dia fica melhor. Vem descobrir o sabor do BugLanche.</p>
+                <div class="hero-actions">
+                    <a class="button" href="#cardapio">Escolher meu lanche <span aria-hidden="true">→</span></a>
+                    <a class="text-link" href="#sobre">Conheça o BugLanche <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-note">
+                    <span class="note-star" aria-hidden="true">✳</span>
+                    <span>Feito para quem leva<br>lanche a sério.</span>
+                </div>
+            </div>
+
+            <div class="hero-art reveal" aria-label="Hambúrguer BugLanche em camadas">
+                <span class="art-orbit orbit-one" aria-hidden="true"></span>
+                <span class="art-orbit orbit-two" aria-hidden="true"></span>
+                <span class="art-sticker" aria-hidden="true">BOM<br>DEMAIS!</span>
+                <img src="./source/image/home.png" alt="Hambúrguer com pão, queijo, tomate, carne e alface em camadas">
+                <span class="art-caption"><span>01</span> Sabor que surpreende</span>
+            </div>
+
+            <a class="scroll-cue" href="#sobre" aria-label="Role para conhecer o BugLanche">
+                <span></span> Role para descobrir
+            </a>
+        </section>
+
+        <section class="intro section-shell" id="sobre">
+            <div class="intro-mark reveal" aria-hidden="true">B.</div>
+            <div class="intro-copy reveal">
+                <span class="eyebrow eyebrow-dark">Mais que matar a fome</span>
+                <h2>Tem coisa melhor que<br><span>um burger bem feito?</span></h2>
+                <p>No BugLanche, cada mordida é um convite para dar uma pausa na correria e aproveitar o que realmente importa: comida gostosa e bons momentos.</p>
+            </div>
+            <div class="intro-doodle" aria-hidden="true">feito<br>com gosto <span>↗</span></div>
+        </section>
+
+        <section class="menu-section section-shell" id="cardapio">
+            <div class="section-heading reveal">
+                <div>
+                    <span class="eyebrow eyebrow-dark">A estrela da casa</span>
+                    <h2>Olha esse <span>burger.</span></h2>
+                </div>
+                <p>Prepare o apetite.<br>O resto deixa com a gente.</p>
+            </div>
+
+            <article class="menu-card reveal">
+                <div class="menu-image">
+                    <span class="image-label">BugLanche <span aria-hidden="true">✳</span></span>
+                    <img src="./source/image/b1.png" alt="Hambúrguer BugLanche com pão, alface, tomate, queijo, bacon e carne">
+                    <span class="image-index" aria-hidden="true">01 / 01</span>
+                </div>
+                <div class="menu-details">
+                    <span class="product-tag"><span></span> O clássico da casa</span>
+                    <h3>Hambúrguer<br>da casa</h3>
+                    <p>Camadas generosas, ingredientes que se completam e aquele sabor que dá vontade de repetir.</p>
+                    <div class="product-bottom">
+                        <div class="product-price"><small>A partir de</small><strong>R$ 19,90</strong></div>
+                        <a class="round-link" href="#contato" aria-label="Saiba mais sobre o hambúrguer da casa"><span aria-hidden="true">↗</span></a>
+                    </div>
+                    <span class="menu-watermark" aria-hidden="true">B.</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="contact-section section-shell" id="contato">
+            <div class="contact-card reveal">
+                <div class="contact-copy">
+                    <span class="eyebrow"><span class="eyebrow-dot"></span> A próxima mordida é sua</span>
+                    <h2>Bateu aquela<br>fome de <span>burger?</span></h2>
+                    <p>Seu próximo favorito está no cardápio. Escolha o seu e aproveite.</p>
+                    <a class="button button-light" href="#cardapio">Explorar o cardápio <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="contact-decoration" aria-hidden="true">
+                    <span class="contact-spark spark-one">✳</span>
+                    <span class="contact-spark spark-two">✳</span>
+                    <span class="contact-circle"></span>
+                    <span class="contact-letter">B.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M5 13a11 11 0 0 1 22 0H5Z" fill="currentColor"/>
+                    <path d="M4 16h24v3H4zM6 21h20v3H6zM8 26h16v2H8z" fill="currentColor"/>
+                    <circle cx="12" cy="8" r="1" fill="#f7f4ec"/>
+                    <circle cx="18" cy="6" r="1" fill="#f7f4ec"/>
+                    <circle cx="22" cy="10" r="1" fill="#f7f4ec"/>
+                </svg>
+            </span>
+            <span>Bug<span class="brand-accent">Lanche</span></span>
+        </a>
+        <p>Feito com fome de coisa boa. <span aria-hidden="true">♥</span></p>
+        <a class="back-top" href="#home">Voltar ao topo <span aria-hidden="true">↑</span></a>
+        <small class="copyright">&copy; 2026 BugLanche. Todos os direitos reservados.</small>
+    </footer>
+</body>
+</html>
